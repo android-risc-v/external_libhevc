@@ -288,6 +288,18 @@ cc_library_static {
             ],
         },
 
+        riscv64: {
+            local_include_dirs: [
+                "decoder/riscv",
+                "common/riscv",
+            ],
+
+            srcs: [
+                "decoder/riscv/ihevcd_function_selector.c",
+                "decoder/riscv/ihevcd_function_selector_riscv_generic.c",
+            ],
+        },
+
         mips: {
             local_include_dirs: [
                 "decoder/mips",
@@ -739,6 +751,12 @@ cc_library_static {
                     "-DENABLE_NEON", "-DARM",
                 ],
             },
+        },
+
+        riscv64: {
+            local_include_dirs: [
+                "common/riscv",
+            ],
         },
 
         x86_64: {
