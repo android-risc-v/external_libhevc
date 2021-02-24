@@ -296,6 +296,18 @@ cc_library_static {
             },
         },
 
+        riscv64: {
+            local_include_dirs: [
+                "decoder/riscv",
+                "common/riscv",
+            ],
+
+            srcs: [
+                "decoder/riscv/ihevcd_function_selector.c",
+                "decoder/riscv/ihevcd_function_selector_riscv_generic.c",
+            ],
+        },
+
         x86_64: {
             cflags: [
                 "-DX86",
@@ -754,6 +766,12 @@ cc_library_static {
                     "-DARM",
                 ],
             },
+        },
+
+        riscv64: {
+            local_include_dirs: [
+                "common/riscv",
+            ],
         },
 
         x86_64: {
