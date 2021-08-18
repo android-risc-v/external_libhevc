@@ -29,6 +29,7 @@ cc_library_static {
         "-DANDROID",
         "-Wall",
         "-Werror",
+        "-Wno-unused-function",
         // common/x86/ihevc_sao_ssse3_intr.c: implicit conversion from
         // 'int' to 'char' changes value from 128 to -128
         "-Wno-error=constant-conversion",
@@ -446,6 +447,7 @@ cc_library_static {
         "-O3",
         "-Wall",
         "-Wno-unused-variable",
+        "-Wno-unused-function",
         "-Wno-unused-parameter",
         "-Wno-switch",
     ],
