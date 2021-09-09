@@ -402,7 +402,7 @@ cc_library_static {
         integer_overflow: true,
         misc_undefined: ["bounds"],
         // Enable CFI if this becomes a shared library.
-        cfi: true,
+        cfi: false,
 	config: {
             cfi_assembly_support: true,
         },
@@ -793,7 +793,7 @@ cc_library_static {
         integer_overflow: true,
         misc_undefined: ["bounds"],
         // Enable CFI if this becomes a shared library.
-        cfi: true,
+        cfi: false,
 	config: {
             cfi_assembly_support: true,
         },
